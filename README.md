@@ -1,0 +1,1 @@
+# nwjs-auto-update
