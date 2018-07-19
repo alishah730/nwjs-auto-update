@@ -1,0 +1,31 @@
+{
+    "name": "nw-demo",
+    "main": "app.html",
+    "version": "1.0.2",
+    "window": {
+        "show": false,
+        "frame": true,
+        "position": "center",
+        "width": 500,
+        "height": 500
+    },
+    "scripts": {
+        "start": "nw .",
+        "dist": "build --tasks win-x64,mac-x64 --mirror https://dl.nwjs.io/ .",
+        "package": "nwb nwbuild -v 0.31.5-sdk . -o ../server/releases --output-format=ZIP --output-name={name}-r{version}-{target}"
+    },
+    "devDependencies": {
+        "nwjs-builder-phoenix": "^1.14.6",
+        "nwjs-builder": "^1.14.0"
+    },
+    "build": {
+        "nwVersion": "0.31.5",
+        "outputPattern": "${NAME}-${VERSION}-${PLATFORM}-${ARCH}",
+        "targets": ["zip", "7z", "nsis", "nsis7z"],
+        "packed": true
+
+    },
+    "dependencies": {
+        "nw-autoupdater": "^1.1.5"
+    }
+}

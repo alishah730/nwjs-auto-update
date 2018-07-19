@@ -1,0 +1,15 @@
+{
+    "latest": "1.0.2",
+    "versions": [{
+        "version": "1.0.2",
+        "changelog": "",
+        "source": "nw-demo-1.0.2-win-x64",
+        "installers": [{
+            "arch": "x64",
+            "path": "nw-demo-1.0.2-win-x64-Setup.exe",
+            "hash": "6d4386a56e7933d8ef9aae92312ef88ded0c8ae150befac7c79a5f2927c62962",
+            "created": 1531970538290
+        }],
+        "updaters": []
+    }]
+}
